@@ -1,1 +1,10 @@
 # front-repeat
+## Введение
+### Технологии
+- HTML
+- pug
+- CSS
+- SCSS
+- JS
+- gulp
+- BEM

@@ -1,0 +1,47 @@
+section.about
+  .about__inner
+    h2.about__title.title Фотосессия в вертолете
+    iframe.about__video
+    p.about__text
+    ul.about__list.list
+       -
+         const list = [
+           [
+             '#',
+             '3 часа съемки'
+           ],
+           [
+             '#',
+             'Русский'
+           ],
+           [
+             '#',
+             'от <span class="price">850$</span>'
+           ],
+           [
+             '#',
+             'Дубаи'
+           ],
+           [
+             '#',
+             'Москва'
+           ],
+           [
+             '#',
+             'Более 50 фотографий'
+           ],
+           [
+             '#',
+             'Готовы ответить на любые вопросы'
+           ]
+         ]
+
+       each item, index in list
+         li
+           img(src=list[index][0])
+           span= list[index][1]
+    footer.about__footer
+      span Более 150 отзывов с оценкой
+      ul.stars
+        li
+          img(src="#")
