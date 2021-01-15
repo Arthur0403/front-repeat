@@ -1,4 +1,5 @@
 @import "../../local_modules/normalize.css/normalize";
+@import "fonts.scss";
 
 *,
 *::before,
@@ -12,6 +13,7 @@ html {
 
 body {
     margin: 0;
+    font-family: "Montserrat";
 }
 
 img {
