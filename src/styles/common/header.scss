@@ -1,10 +1,35 @@
 @import "../mixins/media";
 
-header {
-    width: 220px;
-    background-color: red;
+.page-header {
+    width: 100%;
+    background-color: #ffffff;    
+}
 
-    @include media-tablet {
-        width: 500px;
+.page-header__inner {
+    display: flex;
+    align-items: baseline;
+    padding: 20px 15px;
+
+    .page-header__logo {
+        height: 16px;
+    }
+
+    .page-header__city {
+        margin-left: 45px;
+        padding: 0;
+        color: #5286EC;
+        border: none;
+        background-color: none;
+    }
+
+    .page-header__phone {
+        display: none;
+    }
+
+    .page-header__user-icon {
+        margin-left: auto;
+        padding: 0;
+        border:  none;
+        background-color: none;
     }
 }
