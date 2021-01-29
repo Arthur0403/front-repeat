@@ -1,0 +1,23 @@
+.gallery__title {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 34px;
+}
+
+.show-more {
+    display: none;
+}
+
+.gallery__list {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+
+    li:not(:last-child) {
+        flex: 0 0 auto;
+        margin-right: 15px;
+        border-radius: 4px;
+    }
+}

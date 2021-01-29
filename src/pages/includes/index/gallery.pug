@@ -1,7 +1,8 @@
 section.gallery
   .gallery__inner
-    h2.gallery__title
-    ul
-      li
-        img(src="#")
+    h2.gallery__title Фотографии пакета
+    ul.gallery__list
+      - for(var i = 1; i <= 4; i++)
+        li
+          img(src=`../../../img/gallery/item_${i}.jpg`)
     button.show-more Показать все фото     
