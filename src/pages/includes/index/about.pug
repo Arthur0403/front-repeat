@@ -41,7 +41,9 @@ section.about
            img(src=list[index][0])
            span= list[index][1]
     footer.about__footer
-      span Более 150 отзывов с оценкой
-      ul.stars
-        li
-          img(src="#")
+      .about__footer-wrap
+        span Более 150 отзывов с оценкой
+        ul.about__stars.stars
+          - for (var i = 0; i < 5; i++)
+            li
+              img(src="../../../img/icons/fill-star.svg")
